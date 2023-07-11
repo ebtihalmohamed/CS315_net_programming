@@ -1,0 +1,32 @@
+.main.a
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+.main
+{
+    display: flex;
+    align-items: center; 
+   justify-content: center; 
+}
+main input
+{
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+button{
+  height: 30px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(87, 100, 9);
+    outline: none;
+    background: rgb(146, 146, 179);
+    color: rgb(255, 251, 251);
+}
