@@ -1,0 +1,38 @@
+
+.mn.s
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+.mn
+{
+    display: flex;
+    align-items: center; 
+   justify-content: center; 
+}
+ input
+{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 100px;
+    border: 1px solid gray;
+    outline: none;
+    margin-bottom: 20px;
+   
+}
+button{
+  height: 30px;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(87, 100, 9);
+    outline: none;
+    background: rgb(146, 146, 179);
+    color: rgb(255, 251, 251);
+    margin-bottom: 10px;
+    align-items: self-end;
+     
+}

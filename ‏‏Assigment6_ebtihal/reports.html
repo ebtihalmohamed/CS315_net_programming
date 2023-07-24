@@ -1,0 +1,18 @@
+<div  style="background-color:   hsla(320, 92%, 65%, 0.945); width: 200cap; height:200cap;"></div>
+
+
+<?php //كود تعديل فئة
+//للحصول او ارجاع جميع البيانات وحفظها في متغير RESULT
+
+include_once 'dbConn.php';
+$conn = new mysqli($hn, $un , $pw ,$db);
+if(count($_POST)>0)
+{
+    mysqli_query($conn,"UPDATE category SET cat_name='".$_POST['cat_name']."',Budget='".$_POST['Budget']."',  
+    date='".$_POST['date']."', Paid_up='".$_POST['Paid_up']."', Purchase_Type='".$_POST['Purchase_Type']."'"); 
+    $message='<p style ="color:green">SUCCESSFULL !</p>';   
+}
+
+$result2=mysqli_query($conn,"SELECT *FROM category WHERE PK_cat='".$_GET['PK_cat']."'");
+$row=mysqli_fetch_array($result2);
+?>
